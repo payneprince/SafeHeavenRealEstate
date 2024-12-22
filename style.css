@@ -1,0 +1,326 @@
+/* Header Section */
+header {
+    background-color: #f8fafd;
+    display: flex;
+    flex-direction: column; /* Stack logo and navbar vertically */
+    align-items: center; /* Center the logo and navbar horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 15px 30px;
+    color: rgb(12, 12, 12);
+    border-bottom: 3px solid #0056b3; /* Subtle bottom border for separation */
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    align-items: center; /* Center logo and text vertically */
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 10px; /* Adds space between the logo and navbar */
+}
+
+.logo-container img {
+    max-height: 60px; /* Adjust logo size */
+    margin-right: 15px; /* Space between logo and text */
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* User Session Section */
+.user-session {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between session elements */
+}
+
+.user-session p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.user-session .btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    color: #007bff;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+.user-session .btn:hover {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3;
+}
+
+/* Search Form */
+.search-container {
+    margin: 20px 0;
+    text-align: center;  /* Center the form */
+}
+
+/* Form styling */
+.search-container form {
+    display: inline-block;   /* Keep the form inline with the rest of the content */
+    padding: 10px;           /* Add padding to the form */
+    background-color: #f1f1f1;  /* Set background color */
+    border-radius: 5px;      /* Round the corners of the form */
+}
+
+/* Input field styling */
+.search-container input {
+    padding: 8px;               /* Add padding inside the input fields */
+    margin: 5px;                /* Add margin between input fields */
+    font-size: 14px;            /* Set a smaller font size */
+    width: 200px;               /* Set the width of the input fields */
+    border: 1px solid #ccc;    /* Set a light border */
+    border-radius: 4px;        /* Round the corners of the input fields */
+}
+
+/* Button styling */
+.search-container button {
+    padding: 8px 12px;          /* Add padding for the button */
+    background-color: #346de8;  /* Set a green background color */
+    color: white;               /* Set text color to white */
+    border: none;               /* Remove the border */
+    border-radius: 4px;         /* Round the corners of the button */
+    font-size: 14px;            /* Set a smaller font size for the button */
+    cursor: pointer;           /* Change cursor to pointer */
+}
+
+/* Button hover effect */
+.search-container button:hover {
+    background-color: #45a049;  /* Darken the background color when hovered */
+}
+
+/* Property Grid */
+.property-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.property-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.property-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+.property-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* adjust as needed */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the start without extra space */
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.logo-container {
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+.company-name h1 {
+    margin: 0;
+    font-size: 40px; /* Adjust the font size as needed */
+    font-family: 'Arial',fantasy; /* Adjust the font style */
+    margin-left: 10px; /* Adds some space between the logo and company name */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #be2424; /* Dark background color */
+    padding: 10px 0; /* Padding around the navbar */
+    display: flex;
+    justify-content: center; /* Center the navbar horizontally */
+    width: 100%;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: row; /* Navbar items in a row (horizontal) */
+    justify-content: center; /* Center navbar items horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px; /* Adds space between navbar items */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none; /* Removes underline from links */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px; /* Adds padding inside each link */
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757; /* Darkens the background on hover */
+    border-radius: 5px; /* Adds rounded corners on hover */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Ensure the navbar stays horizontal on larger screens */
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 10px 0; /* Space between items */
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+#map {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+}
+
+/* Basic button styling */
+button {
+    background-color: #007BFF; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+button:active {
+    background-color: #004085; /* Even darker shade on click */
+    transform: translateY(0); /* Reset the movement */
+}
+
+/* Specific styles for login/register buttons */
+button[type="submit"] {
+    width: 100%; /* Make button span the full width */
+    padding: 12px 20px; /* Adjust padding */
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Uppercase text */
+    border-radius: 30px; /* More rounded corners */
+}
+
+/* Add a small hover effect for forms */
+form button[type="submit"]:hover {
+    background-color: #28a745; /* Green color on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Form styling */
+form {
+    max-width: 400px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners for the form */
+    background-color: #f9f9f9;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Header section */
+header {
+    background-color: #dab4b4; /* Light background */
+    padding: 10px;
+}
+
+.logo-container img {
+    max-height: 50px; /* Adjust logo size */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
